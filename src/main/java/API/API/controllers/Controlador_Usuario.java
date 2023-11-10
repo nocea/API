@@ -15,7 +15,7 @@ import API.API.services.Servicio_Usuario;
 public class Controlador_Usuario {
 	@Autowired
 	Servicio_Usuario serv_usuario;
-	@GetMapping()
+	@GetMapping("/get")
 	public List<Usuario> SelectAllUsuario(){
 		return serv_usuario.SelectAllUsuario();
 	}
